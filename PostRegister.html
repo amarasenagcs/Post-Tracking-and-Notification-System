@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Registration</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+.btn.btn-primary.btn-lg.Scan{
+      width: 120px;
+      height: 50px;
+      text-align: center;
+      background-color:#0275d8 ;
+      border-radius: 12px;
+      margin: 20px 0 0px;      
+    }
+
+    .btn.btn-primary.btn-lg.Register{
+      width: 200px;
+      height: 76px;
+      text-align: center;
+      background-color:#0275d8 ;
+      border-radius: 12px;
+      margin: 0 0 0 200px;      
+    }
+    .btn:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    h1.header{
+      margin-top: 2.2rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #0275d8;
+    }
+    
+  
+    .form-row{
+      border: 2px solid #0275d8;
+      width: 629px;
+      height: 700px;
+      margin-top: 3.5rem;
+      margin-left: 320px;
+      margin-bottom: 3rem;
+
+       /* border-radius */
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+       border-radius: 20px;
+
+
+        /* box-shadow */
+        box-shadow: rgba(36, 124, 238, 0.822) 0 0 5px;
+            
+    }
+  </style>
+</head>
+<body>
+    <form>
+      
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <h1 class="header">Post Registration</h1>
+          </div>
+          <div class="form-group col-md-6">
+                <h3>From</h3>
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="senderInputName">
+
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="senderInputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Tracking ID</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="BA123456789LK">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputZip">Postal Code</label>
+                <input type="text" class="form-control" id="inputZip" disabled>
+              </div>
+          </div>    
+            
+            <div class="form-group col-md-6">
+                <h3>To</h3>
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="reciverInputName">
+
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="reciverInputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-group col-md-6">
+                <button type="submit" class="btn btn-primary btn-lg Scan">Scan</button>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputZip">Postal Code</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              
+            </div>
+            <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-primary btn-lg Register">Register</button>
+          </div>
+        </div>
+        
+      </form>
+
+      <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post State Update</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+.btn.btn-primary.btn-lg.Scan{
+      width: 120px;
+      height: 50px;
+      text-align: center;
+      background-color:#0275d8 ;
+      border-radius: 12px;
+      margin: 20px 0 0px;      
+    }
+
+    .btn.btn-primary.btn-lg.Update{
+      width: 200px;
+      height: 76px;
+      text-align: center;
+      background-color:#0275d8 ;
+      border-radius: 12px;
+      margin: 0 0 0 200px;      
+    }
+
+    .btn:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    h1.header{
+      margin-top: 2.2rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #0275d8;
+    }
+    
+  
+    .form-row{
+    
+      float: right;
+      border: 2px solid #0275d8;
+      width: 629px;
+      height: 700px;
+      margin-right:200px ;
+      margin-top: 3.5rem;
+      margin-left: 320px;
+      margin-bottom: 3rem;
+
+       /* border-radius */
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+       border-radius: 20px;
+
+
+        /* box-shadow */
+        box-shadow: rgba(36, 124, 238, 0.822) 0 0 5px;
+            
+    }
+
+  .leftcolumn {   
+  float: left;
+  width: 45%;
+
+  margin-top: 4%;
+}
+.rightcolumn {
+  float: left;
+  width: 55%;
+  
+}
+  </style>
+</head>
+<body>
+    <form>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <div class="fakeimg" style="height:500px; background-image: url(undraw_online_articles_79ff.svg); ">
+            </div>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <h1 class="header">Post State Update</h1>
+            </div>
+  
+            <div class="form-group col-md-6">
+                  <label for="inputAddress2">Tracking ID</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="BA123456789LK">
+                  <label for="inputAddress2">Tracking ID</label>
+            </div>    
+              
+            <div class="form-group col-md-6">
+                  <button type="submit" class="btn btn-primary btn-lg Scan">Scan</button>
+            </div>
+            <div class="form-group col-md-12">
+              <button type="submit" class="btn btn-primary btn-lg Update">Update</button>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    </form>
+
+      <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

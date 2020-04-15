@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <style>
+
+        h1
+        {
+            padding: 0px;
+            margin: 0px;
+            color:#0275d8;
+            
+        }
+        .formtxt
+        {
+            
+            padding: 50px;
+            
+ 
+        }
+        
+        
+        .formimg
+        {
+            /* background-image: url("formlogo.png"); */
+            
+            width: 629px;
+            height: 621px;
+            margin-top: 3.5rem;
+            margin-left: 320px;
+            
+            
+        }
+        
+        .formtxt {
+            /* basic */ 
+            background-color: #F3F9F8;
+            margin-top: 70px;
+            margin-bottom: 200px;
+            height: auto;
+            width: 629px;
+            padding: 100px;
+            text-align: center;
+            /* border-radius */
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            /* box-shadow */
+            -webkit-box-shadow: rgba(22, 53, 228, 0.548) 0px 0 10px;
+            -moz-box-shadow: rgba(25, 112, 226, 0.815) 0 0 10px;
+            box-shadow: rgba(40, 28, 206, 0.8) 0 0 10px;
+}
+    </style>
+</head>
+<body >
+ 
+    <!--Start Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><img src="../images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Tracking">Tracking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<!--End Navigation-->
+ 
+ 
+    <!--form-->
+    <form action="C:\xampp\htdocs\register.php" method="POST">
+        <div class="formimg">
+            <div class="formtxt">
+                    <h1 class="text-center">Registration</h1>
+                    <div class="form-row">
+                        <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">First name</label>
+                            <input type="text" class="form-control" id="inputNameReg" required> 
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastNameReg"required>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4"required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Contact number</label>
+                        <input type="number" class="form-control" id="inputPhone"required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">User name</label>
+                        <input type="text" class="form-control" id="inputPhone"required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4"required>
+                    </div>
+                    
+                    </div>
+                    <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"required>
+                    </div>
+                    <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control" >
+                        <option selected >Choose...</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputZip">Postal code</label>
+                        <input type="number" class="form-control" id="inputZip" required>
+                    </div>
+                    </div>
+                 <!--   <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        Check me out
+                        </label>
+                    </div> 
+                    
+                    </div>  -->
+                    <button type="submit" class="btn btn-primary btn-lg ">Register</button>
+                </div>
+            </div>
+      </form>
+      
+      <!--Start Script Files-->
+
+      <!--Jquery js file-->
+      <script src="../js/jquery-3.4.1.min.js"></script>
+
+      <!-- Boostrap js file -->
+      <script src="../js/bootstrap.min.js"></script>
+
+      <!--Fontawesome-->
+      <script src="../js/all.js"></script>
+
+<!--End Script Files-->
+</body>
+</html>
